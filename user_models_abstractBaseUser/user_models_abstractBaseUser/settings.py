@@ -10,7 +10,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
-    'abstract_base_user_sample',s
+    'abstract_base_user_sample',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -60,6 +60,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'abstract_base_user_sample.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {
