@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from .forms import CustomUserForm
 
 
 def home(request):
@@ -11,6 +12,6 @@ def home(request):
         else:
             return HttpResponse("There was an error.")
     else:
-        form = CadenzaUserForm()
+        form = CustomUserForm()
 
-    return render(request, 'home.html', {'form': form})
+    return render(request, 'abstract_base_user_sample/home.html', {'form': form})

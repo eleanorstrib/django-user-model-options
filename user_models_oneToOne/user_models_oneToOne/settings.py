@@ -11,13 +11,13 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
-    'one_to_one_sample',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'one_to_one_sample',
 ]
 
 MIDDLEWARE = [

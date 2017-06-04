@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+  <title>OneToOneField Form Example</title>
+</head>
+
+<body>
+  <p>This is an example of a signup form using the User model in Django.</p>
+
+  <p>In this example, the form shows fields from the User model.  There is a custom model
+  associated with this one that includes the zip code field (email is already in the User model)
+  but it is not shown here. </p>
+
+  <p>All of the default Django fields are still present in the model and the database, but
+  not shown in the form.</p>
+
+  <form action="" method="POST">{% csrf_token %}
+  		<table>
+  			<tbody>
+          {{ form.as_table }}
+  			</tbody>
+  		</table>
+  			<p>&nbsp</p>
+  			<p><button type="submit">signup</button></p>
+  </form>
+</body>

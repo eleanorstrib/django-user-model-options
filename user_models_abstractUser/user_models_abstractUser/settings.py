@@ -11,13 +11,13 @@ ALLOWED_HOSTS = []
 
 
 INSTALLED_APPS = [
-    'abstract_user_sample',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'abstract_user_sample',
 ]
 
 MIDDLEWARE = [
@@ -57,6 +57,7 @@ DATABASES = {
     }
 }
 
+AUTH_USER_MODEL = 'abstract_user_sample.CustomUser'
 
 AUTH_PASSWORD_VALIDATORS = [
     {

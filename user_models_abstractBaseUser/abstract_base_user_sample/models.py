@@ -33,7 +33,8 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     Note than all fields would be required unless specified otherwise, with
     `required=False` in the parentheses.
 
-    The PermissionsMixin
+    The PermissionsMixin is a model that helps you implement permission settings
+    as-is or modified to your requirements.
     More info: https://goo.gl/YNL2ax
     """
     email = models.EmailField(unique=True)
