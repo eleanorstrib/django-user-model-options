@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+  <title>AbstractUser Form Example</title>
+</head>
+
+<body>
+  <p>This is an example of a signup form with custom fields based on a model that
+  subclasses the AbstractUser model in Django.</p>
+
+  <p>The default Django fields are still present in the model and the database, but
+  not shown in the form.</p>
+
+  <form action="" method="POST">{% csrf_token %}
+  		<table>
+  			<tbody>
+  				{{ form.as_table }}
+  			</tbody>
+  		</table>
+  			<p>&nbsp</p>
+  			<p><button type="submit">signup</button></p>
+  </form>
+</body>
