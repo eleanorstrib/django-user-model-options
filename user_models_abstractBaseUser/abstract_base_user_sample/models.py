@@ -41,7 +41,7 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
     zip_code = models.CharField(max_length=6)
     name = models.CharField(max_length=30)
     is_staff = models.BooleanField(default=False)
-    REQUIRED_FIELDS = ['zip_code', 'password']
+    REQUIRED_FIELDS = ['zip_code']
     USERNAME_FIELD = 'email'
 
     objects = CustomAccountManager()

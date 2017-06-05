@@ -1,7 +1,8 @@
-from django.conf import settings
-from django.conf.urls import url
+from django.conf.urls import url, include
 from . import views
 
-url_patterns = [
-    url(r'^$', views.home, name='index'),
+print(views)
+
+urlpatterns = [
+    url(r'^$', views.home, name='home')
 ]

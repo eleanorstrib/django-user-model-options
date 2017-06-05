@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>AbstractBaseUser Form Example</title>
+</head>
+
+<p>This is an example of a signup form with custom fields based on a model that
+subclasses the AbstractBaseUser model in Django.</p>
+
+<p>Aside from a couple of fields Django always retains for any user (is_active,
+last_login and password), this option enables you to restrict the fields to whatever
+you want.</p>
+
+<form action="" method="POST">{% csrf_token %}
+    <table>
+      <tbody>
+        {{ form.as_table }}
+      </tbody>
+    </table>
+      <p>&nbsp</p>
+      <p><button type="submit">signup</button></p>
+</form>

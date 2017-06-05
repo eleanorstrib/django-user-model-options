@@ -5,5 +5,5 @@ from .models import CustomUser
 class CustomUserForm(UserCreationForm):
     class Meta(UserCreationForm.Meta):
         model = CustomUser
-        fields = ('email', 'zip_code', 'password')
+        fields = ('email', 'zip_code')
         error_css_class = 'error'
