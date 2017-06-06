@@ -5,6 +5,7 @@ from .forms import CustomUserForm
 def home(request):
     if request.method == 'POST':
         form = CustomUserForm(request.POST)
+        print(form)
         if form.is_valid():
             form.save()
             return HttpResponse("User was created successfully.")
