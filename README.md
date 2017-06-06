@@ -1,5 +1,5 @@
 # django-user-model-options
-Repo with in-depth coverage of high level concepts from a poster session I did at PyCon 2017 in Portland, OR, May 21, 2017
+Repo with in-depth coverage of high level concepts from a poster session I did at PyCon 2017 in Portland, OR, May 21, 2017.
 
 An in-depth discussion of each of the three options I presented for customizing the Django User model can be found in [this blog post](https://medium.com/agatha-codes/options-objects-customizing-the-django-user-model-6d42b3e971a4) on [_Agatha_](https://medium.com/agatha-codes), a blog I started to share some of the problem solving I've had to do when working on my software projects.
 
